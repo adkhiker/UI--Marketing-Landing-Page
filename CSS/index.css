@@ -1,47 +1,7 @@
-/* @nav-bg: @wild-sand;
-@nav-font: @river-bend;
-@nav-border: @sea-shell;
-
-@header-font-color: @ebony-clay;
-@main-font-color: @shuttle-gray;
-@main-border-color: @border-real;
-
-@footer-background: @wild-sand;
-@footer-font-color: @waterloo; */
-/* @wild-sand: #f6f6f6;
-@river-bend: #454a59;
-@sea-shell: #f1f1f1;
-@ebony-clay: #23293b;
-@shuttle-gray: #5e6164;
-@porcelain: #f6f7f8;
-@waterloo: #81848e;
-@btn-bg-color: #22283a;
-@border-real: #dee2e6; */
 /* @duration: @seconds;
 @animation-iteration: @iterations; */
 /* @seconds: 3s;
 @iterations: 1; */
-/* 
-.bounce {
-  position: relative;
-  width: 175px;
-  height: 70px;
-  animation-name: lift-off;
-  animation-duration: @seconds;
-  animation-iteration-count: @iterations;
-
-  @keyframes lift-off {
-    0% {
-      bottom: 0px;
-      transform: rotate(1440deg);
-    }
-    25% {
-      bottom: 300px;
-      transform: rotate(360deg);
-    }
-  }
-}
- */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -214,26 +174,11 @@ p {
 nav {
   margin: 1rem;
   padding-top: 1.1rem;
-  /*  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
-  } */
 }
 nav a {
   text-decoration: none;
   margin: 1.5rem;
   font-size: 1.6rem;
-  /* animation-duration: @seconds;
-    animation-name: slidein;
-    animation-iteration-count: @iterations;
-    animation-direction: alternate; */
 }
 /* footer {
   color: #22283b;
@@ -245,42 +190,35 @@ nav a {
   justify-content: center;
   align-items: center;
 } */
-/* .home {
-  .intro {
-    .backgrounded {
-      .background();
-      .absolute();
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 4rem;
-      margin-top: 1rem;
-    }
-
-    nav {
-      text-align: center;
-    }
-
-    img {
-      width: 80rem;
-      height: auto;
-      margin-top: 10rem;
-
-      @media @phone {
-        width: 50rem;
-        height: auto;
-      }
-    }
-
-    h2 {
-      padding: 15px;
-    }
-
-    p {
-      padding: 0 15px;
-    }
+.home .intro .backgrounded {
+  background: #f6f6f6;
+  border: 1px double #f1f1f1;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.home .intro h1 {
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 1rem;
+}
+.home .intro nav {
+  text-align: center;
+}
+.home .intro img {
+  width: 80rem;
+  height: auto;
+  margin-top: 10rem;
+}
+@media (max-width: 500px) {
+  .home .intro img {
+    width: 50rem;
+    height: auto;
   }
-
-
- */
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
