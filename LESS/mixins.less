@@ -1,0 +1,48 @@
+// Mixins Here
+.background() {
+  background: @nav-bg;
+  border: 1px double @nav-border;
+}
+.absolute() {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.button-creator(@width, @height, @bg-color, @font-color, @font-size) {
+  width: @width;
+  height: @height;
+  background-color: @bg-color;
+  color: @font-color;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: @font-size;
+  border-radius: 6px;
+
+  &:hover {
+    background: white;
+    color: @shuttle-gray;
+  }
+}
+/* 
+.bounce {
+  position: relative;
+  width: 175px;
+  height: 70px;
+  animation-name: lift-off;
+  animation-duration: @seconds;
+  animation-iteration-count: @iterations;
+
+  @keyframes lift-off {
+    0% {
+      bottom: 0px;
+      transform: rotate(1440deg);
+    }
+    25% {
+      bottom: 300px;
+      transform: rotate(360deg);
+    }
+  }
+}
+ */
+
