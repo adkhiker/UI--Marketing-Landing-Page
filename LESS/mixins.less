@@ -1,11 +1,14 @@
-// Mixins Here
-.background() {
-  background: @nav-bg;
-  border: 1px double @nav-border;
-}
-.absolute() {
-  position: absolute;
-  left: 0;
-  right: 0;
+.width-100 {
+  width: 100%;
 }
 
+.border-bottom-grey {
+  border-bottom: 2px solid gray;
+}
+
+.flex(@jc: none, @ai: none, @dir: row) {
+  display: flex;
+  justify-content: @jc;
+  align-items: @ai;
+  flex-direction: @dir;
+}

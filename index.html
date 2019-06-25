@@ -1,32 +1,88 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Art Portolio</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
+    <title>Art Portolio</title>
+    <link rel="stortcut icon" href="./favicon.ico" />
     <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="./components/Tabs/Tabs.js" async></script> -->
+ <!-- <script src="./components/Carousel/Carousel.js" async></script> -->
   </head>
+
   <body>
-
-      <header class="intro">
-        <div class="backgrounded">
-          <nav>
-            <a href="#">Art Portolio</a>
-            <a href="#">Galleries</a>
-            <a href="#">Find Artists</a>
-            <a href="#">Sign Up</a>
-            <a href="#">Log In</a>
-          </nav>
+    <!-- TOP BAR COMPONENT -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="container-left">
+          <span>Art Portolio</span><span>Search</span>
         </div>
+        <div class="container-center">
+          <span>Galleries</span><span>Find Artists</span><span>Sign Up</span>
+        </div>
+        <div class="container-right"><span>LOG IN</span></div>
+      </div>
+    </div>
 
-    <p>
-      Isn't that fantastic that you can create an almighty tree that fast? The least little bit can do so much. Only think about one thing at a time. Don't get greedy. We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world. I sincerely wish for you every possible joy life could bring. You can't have light without dark. You can't know happiness unless you've known sorrow.
-    </p>
-      </header>
+    <!-- HEADER COMPONENT -->
+    <div class="header">
+      <h1>Gallery</h1>
+    </div>
 
+    <!-- TABS COMPONENT -->
+    <div class="tabs">
+      <div class="topics">
+        <div class="tab">Sign me up!</div>
+      </div>
+    </div>
+
+
+    <div class="cards-container">
+      <!-- CARD COMPONENTS -->
+
+      <div class="card">
+        <div class="headline">
+          <img src="./assets/GP_A New Day is Dawning.png" />
+        </div>
+        <div class="author">
+          <span>A New Day is Dawning by Greg Poirier</span>
+        </div>
+      </div>
+
+      <div class="card" data-tab="javascript">
+        <div class="headline">
+          <img src="./assets/GP_Honeybee in the Garden.png" />
+        </div>
+        <div class="author">
+          <span>Bee & Flower by Greg Poirier</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="headline">
+          <img src="./assets/GP_End of the Day.png" />
+        </div>
+        <div class="author">
+          <span>End of the Day by Greg Poirier</span>
+        </div>
+      </div>
+
+        <footer>
+        <p>Company</p>
+        <p>Privacy</p>
+        <p>Site Map</p>
+        <p>Create Account</p>
+        <p>Log In</p>
+      </footer>
+
+      </div>
+    </div>
   </body>
 </html>
