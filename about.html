@@ -14,7 +14,7 @@
       crossorigin="anonymous"
     ></script> 
     <!-- <script src="./components/Tabs/Tabs.js" async></script> -->
- <!-- <script src="./components/Carousel/Carousel.js" async></script> -->
+ <script src="./components/Carousel/Carousel.js" async></script>
   </head>
   
   <body>
@@ -48,36 +48,77 @@
       </div>
     </div>
 
+ <!-- CAROUSEL COMPONENT -->
+
+    <!-- Container for the image gallery -->
+<div class="slideContainer">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="./assets/carousel/img_woods_wide.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="./assets/carousel/img_5terre_wide.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="./assets/carousel/img_mountains_wide.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="./assets/carousel/img_lights_wide.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="./assets/carousel/img_nature_wide.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="./assets/carousel/img_snow_wide.jpg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="./assets/carousel/img_woods.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+    </div>
+    <div class="column"> 
+      <img class="demo cursor" src="./assets/carousel/img_5terre.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./assets/carousel/img_mountains.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./assets/carousel/img_lights.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="./assets/carousel/img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div> 
+    <div class="column">
+      <img class="demo cursor" src="./assets/carousel/img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div>
+
 
     <div class="cards-container">
-      <!-- CARD COMPONENTS -->
-
-      <div class="card">
-        <div class="headline">
-          <img src="./assets/GP_A New Day is Dawning.png" />
-        </div>
-        <div class="author">
-          <span>A New Day is Dawning by Greg Poirier</span>
-        </div>
-      </div>
-
-      <div class="card" data-tab="javascript">
-        <div class="headline">
-          <img src="./assets/GP_Honeybee in the Garden.png" />
-        </div>
-        <div class="author">
-          <span>Bee & Flower by Greg Poirier</span>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="headline">
-          <img src="./assets/GP_End of the Day.png" />
-        </div>
-        <div class="author">
-          <span>End of the Day by Greg Poirier</span>
-        </div>
-      </div>
+  
 
         <footer>
         <p>Company</p>
